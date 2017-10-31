@@ -5,19 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SignalRClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="468.256" Width="616.553">
     <Grid>
-        <Button Content="Reportar al servidor" Margin="86,176,268,105" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.139"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
+        <Button x:Name="btnServer" Content="Reportar sólo al servidor" Margin="0,10,10,0" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="173" Height="26" VerticalAlignment="Top" Click="btnServer_Click" >
+
         </Button>
-        <Button Content="Reportar cliente" HorizontalAlignment="Left" Margin="256,176,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1" Height="38"/>
+        <Button x:Name="btnClients" Content="Enviar a clientes" Margin="0,0,10,10" Click="btnClients_Click" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="161"/>
+        <TextBox x:Name="txtMessage" Height="28" Margin="10,0,181,10" TextWrapping="Wrap" Text=""  VerticalAlignment="Bottom"/>
+        <Label Content="Mensajes de otros clientes" Margin="10,10,327,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxMessages" Margin="10,50,10,53"/>
+        <Button x:Name="btnReconnect" Content="Reconectar" Margin="0,10,188,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="125" Height="26" Click="btnReconnect_Click"/>
 
     </Grid>
 </Window>
