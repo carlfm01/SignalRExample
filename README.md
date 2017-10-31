@@ -1,2 +1,2 @@
 # SignalRExample
-Ejemplo simple de implementación de WPF y SignalR en ASP
+SignalR simple example of WPF client and ASP SignalR  
