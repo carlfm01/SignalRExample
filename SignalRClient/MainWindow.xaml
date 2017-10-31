@@ -1,0 +1,23 @@
+﻿<Window x:Class="SignalRClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignalRClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Reportar al servidor" Margin="86,176,268,105" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.139"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Reportar cliente" HorizontalAlignment="Left" Margin="256,176,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1" Height="38"/>
+
+    </Grid>
+</Window>
